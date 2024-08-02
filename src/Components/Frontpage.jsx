@@ -20,6 +20,8 @@ const B = styled.text`
 const UI = styled.p`
  margin-left:5px;
  font-size:1.5rem;
+ color:indigo;
+//  background-color:dimgray;
 `;
 
 const H = styled.h4`
