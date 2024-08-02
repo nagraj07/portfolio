@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Header from "./Components/Header";
+import Frontpage from "./Components/Frontpage";
+import Sidemenu from "./Components/Sidemenu";
+import About from "./Components/About";
+import Myskills from "./Components/Myskills";
+import Experience from "./Components/Experience";
+import Footer from "./Components/Footer";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ backgroundColor: "black" }}>
+      <div style={{ backgroundImage: "URL('./Images/background.jpeg')", backgroundSize: "cover" }}>
+        <Header />
+        <div style={{ display: "flex", paddingBottom: "30px" }}>
+          <Frontpage />
+          <Sidemenu />
+        </div>
+      </div>
+      <About />
+      <Myskills />
+      <Experience />
+      <Footer />
     </div>
   );
 }
